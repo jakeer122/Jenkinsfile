@@ -1,6 +1,5 @@
 pipeline {
     agent { docker { image 'golang:1.14' } }
-    docker pull golang
     environment {
         GOCACHE = '/tmp/gocache'
     }
