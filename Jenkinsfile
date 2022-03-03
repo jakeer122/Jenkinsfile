@@ -5,6 +5,7 @@ pipeline {
     }    
     environment {
         GOCACHE = '/tmp/gocache'
+        GO111MODULE = 'on'
     }
     stages {
         stage('build') {
