@@ -8,7 +8,7 @@ pipeline {
         GO111MODULE = 'on'
     }
     stages {
-        stage('build') {
+        stage('Compile') {
             steps {
                 sh 'go build'
             }
